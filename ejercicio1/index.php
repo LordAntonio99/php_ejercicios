@@ -9,11 +9,9 @@
 <body>
     <div class="ejercicio1">
         <?php
-        /* Escribe un programa que muestre por pantalla la cadena de texto “Hola Mundo” utilizando
-        una variable, y la instrucción echo. No se puede utilizar la instrucción echo utilizando
-        directamente la cadena de texto.*/
-        $holaMundo = "Hola Mundo";
-        echo $holaMundo;
+        /* Escribe un programa que muestre por pantalla la cadena de texto “Hola Mundo” usando la
+        instrucción echo. No se pueden utilizar variables.*/
+        echo "Hola Mundo";
         ?>
     </div>
     
