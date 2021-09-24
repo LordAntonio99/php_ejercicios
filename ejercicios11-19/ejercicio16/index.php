@@ -7,7 +7,7 @@
     <title>Ejercicios PHP</title>
 </head>
 <body>
-    <div class="ejercicio15">
+    <div class="ejercicio16">
         <?php
         /* utiliza un bucle for-each para mostrar todos los valores del siguiente array asociativo de la
         siguiente forma:
