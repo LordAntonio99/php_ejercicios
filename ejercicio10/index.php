@@ -7,19 +7,20 @@
     <title>Ejercicios PHP</title>
 </head>
 <body>
-    <div class="ejercicio9">
-        <!-- Escribe un programa dado el valor de dos variables. Las sume y muestre el resultado por
-        pantalla. -->
+    <div class="ejercicio10">
+        <!-- Escribe un programa que dada la altura y la base calcule su área y muestre el siguiente
+        mensaje: 
+        El área del rectángulo de altura 2 y anchura 4 es 8. -->
         <form action="." method="POST">
-            <input type="text" id="num1" name="num1" value="1"/>
-            <input type="text" id="num2" name="num2" value="1"/>
-            <input type="submit" value="Sumar" />
+            <input type="text" id="altura" name="altura" value="Altura"/>
+            <input type="text" id="anchura" name="anchura" value="Anchura"/>
+            <input type="submit" value="Calcular" />
         </form>
         <?php
-        $num1 = $_POST["num1"] ?? 100;
-        $num2 = $_POST["num2"] ?? 400;
+        $altura = $_POST["altura"] ?? 2;
+        $anchura = $_POST["anchura"] ?? 4;
          
-        echo "<br/>La suma de $num1 y $num2 es: ".$num1+$num2;
+        echo "<br/>El área del rectángulo de altura $altura y anchura $anchura es ".$altura*$anchura.".";
         ?>        
     </div>
     
