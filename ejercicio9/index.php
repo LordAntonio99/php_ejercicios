@@ -9,19 +9,18 @@
 <body>
     <div class="ejercicio9">
         <form action="." method="POST">
-            <input type="text" id="num1" name="num1" value="Numero 1"/>
-
+            <input type="text" id="num1" name="num1" value="1"/>
+            <input type="text" id="num2" name="num2" value="1"/>
+            <input type="submit" value="Sumar" />
         </form>
         <?php
-        /* Escribe un programa dado el valor de dos variables. Las sume y muestre el resultado por
-        pantalla.*/
-        $var1 = "*";
-        $longitud = 5;
-        for ($i = 1; $i <= $longitud ; $i ++){
-            echo str_repeat($simbolo, $i)."<br\>";
-        }
-        ?>
+        $num1 = $_POST["num1"] ?? 100;
+        $num2 = $_POST["num2"] ?? 400;
+         
+        echo "<br/>La suma de $num1 y $num2 es: ".$num1+$num2;
+        ?>        
     </div>
+    
     
 </body>
 </html>
