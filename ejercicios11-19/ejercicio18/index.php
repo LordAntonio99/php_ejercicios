@@ -50,11 +50,11 @@
                         <td>Posición</td>
                         <td>Valor</td>
                     </tr>";
-            foreach($array as $k){
+            foreach($array as $k => $v){
                 echo "
                         <tr>
-                            <td>".array_search($k, $array)."</td>
-                            <td>".$k."</td>
+                        <td>".$k."</td>
+                        <td>".$array[$k]."</td>
                         </tr>";
             }
             echo "</table>";
