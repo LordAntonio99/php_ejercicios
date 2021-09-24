@@ -7,15 +7,23 @@
     <title>Ejercicios PHP</title>
 </head>
 <body>
-    <div class="ejercicio11">
-        <!-- Escribe un script que simule el comportamiento de lanzar una moneda al aire y muestre una
-        imagen con la cara o la cruz de la moneda.
-        Utiliza: la función rand y un elemento de imagen <img> en HTML.-->
-        <form action="." method="POST">
-            <input type="submit" value="Lanzar Moneda">
-        </form>
+    <div class="ejercicio12">
         <?php
-            $moneda= $POST_["submit"];
+        /* Dada una frase almacenada en una variable:
+        ● muestra por pantalla la frase.
+        ● Debajo muestra la frase en orden inverso. Utiliza un bucle.
+        ● Muestra debajo el tamaño de la frase. El número de caracteres, contando espacios.
+        ● Muestra la frase en mayúsculas utilizando una función. strtoupper()*/
+        $array = ["Hola", "buenos", "dias", "que", "tal", "estas"];
+        echo "La frase completa es:<br/>".implode(" ", $array);
+        echo "<br/>Y parte del array:<br/>";
+        echo print_r($array);
+        echo "<br/>La frase en orden inverso es: <br/>";
+        for ($i = (count($array)-1); $i >=0; $i--){
+            echo "$array[$i]";
+        };
+        echo "<br/>La frase tiene ".strlen(implode(" ", $array))." caracteres.<br/>";
+        echo "La frase en mayúsculas es: <br/>".strtoupper(implode(" ", $array));
         ?>        
     </div>
     

@@ -9,21 +9,19 @@
 <body>
     <div class="ejercicio11">
         <?php
-        /* Dada una frase almacenada en una variable:
-        ● muestra por pantalla la frase.
-        ● Debajo muestra la frase en orden inverso. Utiliza un bucle.
-        ● Muestra debajo el tamaño de la frase. El número de caracteres, contando espacios.
-        ● Muestra la frase en mayúsculas utilizando una función. strtoupper()*/
-        $array = ["Hola", "buenos", "dias", "que", "tal", "estas"];
-        echo "La frase completa es:<br/>".implode(" ", $array);
-        echo "<br/>Y parte del array:<br/>";
-        echo print_r($array);
-        echo "<br/>La frase en orden inverso es: <br/>";
-        for ($i = (count($array)-1); $i >=0; $i--){
-            echo "$array[$i]";
-        };
-        echo "<br/>La frase tiene ".strlen(implode(" ", $array))." caracteres.<br/>";
-        echo "La frase en mayúsculas es: <br/>".strtoupper(implode(" ", $array));
+        /* El juego de FizzBuzz. Muestra del 1 al 30 el resultado del juego FizzBuzz. Se mostrará el
+        número por pantalla, salvo cuando el número sea múltiplo de 3 que se mostrará “Fizz”, o
+        cuando sea múltiplo de 5 se mostrará “Buzz'', cuando sea múltiplo de 3 y 5 se mostrará
+        “FizzBuzz”.*/
+        for ($i = 1; $i <= 30; $i ++){
+            if ($i % 3 == 0){
+                echo "Fizz<br/>";
+            } elseif ($i % 3 == 0) {
+                echo "Buzz<br/>";
+            } else {
+                echo $i."<br/>";
+            }
+        }
         ?>        
     </div>
     
