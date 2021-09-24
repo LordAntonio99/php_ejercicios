@@ -7,15 +7,34 @@
     <title>Ejercicios PHP</title>
 </head>
 <body>
-    <div class="ejercicio8">
+    <div class="ejercicio7">
         <?php
-        /* Escribe un programa que dado una altura dibuje el numero de pisos de *. Tendrás que
-        utilizar bucles anidados. */
-        $simbolo = "*";
-        $longitud = 5;
-        for ($i = 1; $i <= $longitud ; $i ++){
-            echo str_repeat($simbolo, $i)."<br\>";
-        }
+        /* Escribe un programa que dado el valor de una variable dibuje un tablero cuadrado de
+        ajedrez. Utiliza las etiquetas <table> <tr> <td> y la propiedad bgcolor=”#FFFFFF” o
+        bgcolor=#000000 */
+        $ancho = 10;
+            echo "<table border=\"1\">";
+            for ($i = 1; $i <= $ancho; $i++){
+                echo "<tr>";
+                    for($g = 1; $g <= $ancho; $g++){
+                        if ($i % 2 == 0){
+                            if ($g % 2 == 0){
+                                echo "<td height=\"100\" width=\"100\" bgcolor=\"#000\"></td>";
+                            } else {
+                                echo "<td height=\"100\" width=\"100\" bgcolor=\"#FFF\"></td>";
+                            }
+                        } else {
+                            if ($g % 2 == 0){
+                                echo "<td height=\"100\" width=\"100\" bgcolor=\"#FFF\"></td>";
+                            } else {
+                                echo "<td height=\"100\" width=\"100\" bgcolor=\"#000\"></td>";
+                            }
+                        }
+                    }
+                echo "</tr>";
+
+            }
+            echo "</table>";
         ?>
     </div>
     
